@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comt.example.java3.eticaretprojesi.ayarlar">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentEnd="true"
+        android:hint="AD" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="SOYAD" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText9"
+        android:layout_below="@+id/editText8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="MAİL" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText10"
+        android:layout_below="@+id/editText9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="TELEFON" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText11"
+        android:layout_below="@+id/editText10"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="ŞİFRE" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GÜNCELLE"
+        android:id="@+id/button6"
+        android:layout_below="@+id/editText11"
+        android:layout_alignParentEnd="true"
+        android:onClick="fncGuncelle"
+        android:layout_marginTop="45dp" />
+</RelativeLayout>

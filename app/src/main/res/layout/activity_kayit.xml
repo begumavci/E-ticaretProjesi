@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comt.example.java3.eticaretprojesi.Kayit">
+
+    <RelativeLayout tools:context="com.example.java3.a14_jsonkullanicikontrol.kayit"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ktxtAdi"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:hint="Adınız" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ktxtSoyadi"
+            android:layout_below="@+id/ktxtAdi"
+            android:layout_alignEnd="@+id/ktxtAdi"
+            android:layout_alignParentStart="true"
+            android:hint="Soyadınız" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ktxtTel"
+            android:layout_below="@+id/ktxtSoyadi"
+            android:layout_alignEnd="@+id/ktxtSoyadi"
+            android:layout_alignParentStart="true"
+            android:hint="Telefon" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/ktxtMail"
+            android:layout_below="@+id/ktxtTel"
+            android:layout_alignEnd="@+id/ktxtTel"
+            android:layout_alignParentStart="true"
+            android:hint="Msil Adresi" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/ktxtSifre"
+            android:layout_below="@+id/ktxtMail"
+            android:layout_alignEnd="@+id/ktxtMail"
+            android:layout_alignParentStart="true"
+            android:hint="Şifre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Kullanıcı Kayıt"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Yap"
+            android:id="@+id/button"
+            android:layout_below="@+id/ktxtSifre"
+            android:onClick="fncKayitYap"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>
